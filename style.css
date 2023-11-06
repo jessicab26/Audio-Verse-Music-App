@@ -1,0 +1,332 @@
+:root {
+  --main-color: #001202;
+  --secondary-color: #8e0f62;
+  --third-color: #ff4ddd;
+  --fourth-color: #6d995c;
+  --fifth-color: #004200;
+}
+body {
+  background-color: var(--main-color);
+}
+
+.navbar {
+  width: 100%;
+  background-color: var(--main-color);
+  border: 3px double var(--fourth-color);
+  overflow: auto;
+  border-radius: 1em;
+}
+.navbar a {
+  float: left;
+  text-align: center;
+  color: var(--third-color);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+a.split {
+  float: right;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+#heading {
+  color: white;
+  font-size: 80px;
+}
+.container-fluid {
+  display: block;
+  border: 1px solid var(--main-color);
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+  width: 500px;
+  height: auto;
+  align-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 10px var(--fourth-color);
+  margin-bottom: 200px;
+}
+.bars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  border: 2px solid var(--main-color);
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
+}
+.bar1, .bar2, .bar3, .bar4 {
+  height: 150px;
+  border: 1px solid var(--main-color);
+  width: 100%;
+  border-radius: 25px;
+}
+.bar1-bg {
+  animation: bar1 3s linear infinite;
+}
+.bar2-bg {
+  animation: bar2 3s linear infinite;
+}
+.bar3-bg {
+  animation: bar3 3s linear infinite;
+}
+.bar4-bg {
+  animation: bar4 3s linear infinite;
+}
+@keyframes bar1 {
+  0% {
+    background-color: var(--secondary-color);
+    height: 100%;
+    }
+    25% {
+      background-color: var(--secondary-color);
+      height: 75%;
+    }
+    50% {
+      background-color: var(--secondary-color);
+      height: 50%;
+    }
+    75% {
+      background-color: var(--secondary-color);
+      height: 25%;
+    }
+    100% {
+      background-color: var(--secondary-color);
+      height: 100%;
+    }
+}
+@keyframes bar2 {
+  0% {
+  background-color: var(--third-color);
+  height: 50%;
+  }
+  25% {
+    background-color: var(--third-color);
+    height: 25%;
+  }
+  50% {
+    background-color: var(--third-color);
+    height: 100%;
+  }
+  75% {
+    background-color: var(--third-color);
+    height: 75%;
+  }
+  100% {
+    background-color: var(--third-color);
+    height: 50%;
+  }
+}
+@keyframes bar3 {
+  0% {
+  background-color: var(--fourth-color);
+  height: 75%;
+  }
+  25% {
+    background-color: var(--fourth-color);
+    height: 100%;
+  }
+  50% {
+    background-color: var(--fourth-color);
+    height: 50%;
+  }
+  75% {
+    background-color: var(--fourth-color);
+    height: 25%;
+  }
+  100% {
+    background-color: var(--fourth-color);
+    height: 75%;
+  }
+}
+@keyframes bar4 {
+  0% {
+  background-color: var(--fifth-color);
+  height: 25%;
+  }
+  25% {
+    background-color: var(--fifth-color);
+    height: 50%;
+  }
+  50% {
+    background-color: var(--fifth-color);
+    height: 75%;
+  }
+  75% {
+    background-color: var(--fifth-color);
+    height: 50%;
+  }
+  100% {
+    background-color: var(--fifth-color);
+    height: 25%;
+  }
+}
+.music-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  color: var(--third-color);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.play-icon:hover {
+  color: var(--secondary-color);
+}
+.music-list i {
+  float: right;
+  margin-top: 8px;
+}
+.music-list p {
+  margin-left: 10px;
+}
+.music-list div:hover {
+  background-color: var(--fifth-color);
+  color: var(--fourth-color);
+}
+.song1 {
+  margin-top: 5px;
+}
+
+.song1, .song2, .song3, .song4, .song5 {
+  border: 1px solid white;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+.songTitle {
+  font-size: large;
+  margin: 0;
+}
+.artist {
+  font-size: small;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: auto;
+  padding: 50px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 1em;
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 20px 20px var(--fifth-color);
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.form-group {
+  font-size: 25px;
+  padding: 10px;
+}
+.form-group input {
+  width: 300px;
+  border-radius: 5px;
+  height: 25px;
+  box-shadow: 3px 3px 10px var(--main-color);
+}
+.form-group-two input {
+  width: 200px;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: inset -5px -5px 5px rgba(0,0,0,0.5);
+  font-size: 20px;
+}
+.form-group-two input:hover {
+  cursor: pointer;
+  background-color: white;
+  color: var(--main-color);
+}
+.form-group-two input:focus {
+  background-color: white;
+}
+.form-group-two {
+  margin: 20px;
+  height: 50px;
+}
+
+div.checkbox {
+  margin: 10px 0 10px 0;
+  font-family: 'Sriracha', cursive;
+}
+#submitBtn {
+  border-radius: 1em;
+  width: 35%;
+  height: auto;
+  padding: 10px;
+  color: var(--main-color);
+  background-color: var(--fourth-color);
+  box-shadow: 2px 2px 5px var(--main-color);
+  font-family: 'Sriracha', cursive;
+  font-size: medium;
+  margin-bottom: 100px;
+}
+#newSubmitBtn {
+  border-radius: 1em;
+  width: 35%;
+  height: auto;
+  padding: 10px;
+  color: var(--main-color);
+  background-color: var(--fourth-color);
+  box-shadow: 2px 2px 5px var(--main-color);
+  font-family: 'Sriracha', cursive;
+  font-size: medium;
+}
+#submitBtn:hover {
+  background-color: var(--main-color);
+  color: #6d995c;
+  cursor: pointer;
+  box-shadow: inset 5px 5px 4px var(--fourth-color);
+}
+h2 {
+  text-align: center;
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.signUp {
+  background-color: white;
+  border-top-right-radius: 200px;
+  border-top-left-radius: 200px;
+  width: 75%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  height: 55px;
+}
+.signUp:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px;
+  transition: all 1s ease-in-out;
+  background-image: url(images/Audio\ Verse.png);
+  color: white;
+}
+.container-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+

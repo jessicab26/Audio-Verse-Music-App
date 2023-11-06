@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/8de7ce34f9.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="images/Audio Verse.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Verse</title>
+</head>
+<body>
+    <div class="navbar">
+      <a class="active" href="user-home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="#"><i class="fa-solid fa-radio"></i> Stations</a>
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Support</a>
+      <a href="#" class="split"><i class="fa fa-fw fa-user"></i> Login</a>
+    </div>
+    <div class="heading">
+      <h1 id="heading"></h1>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+         <h2>Login to Your Account</h2>
+          <form>
+            <div class="form-group">
+              <label for="text">UserName:</label>
+              <br>
+              <input type="text" class="form-control" id="myText" placeholder="Enter your email" name="email" required autocomplete="on">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <br>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter your password" name="pwd" required>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="remember"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default" id="submitBtn">Submit</button>
+          </form>
+      </div>
+      <div class="signUp">
+        <h3>New to Audio Verse?</h3>
+        <h4>Sign Up</h4>
+        <div class="container-two">
+          <form>
+            <div class="form-group-two">
+              <input type="text" id="firstName"  placeholder="First Name" title="First Name"></div>
+            <div class="form-group-two"> 
+              <input type="text" id="lastName" placeholder="Last Name" title="Last Name">
+            </div>
+            <div class="form-group-two">
+              <input type="email" id="signUpEmail" placeholder="Email" title="Email">
+            </div>
+            <div class="form-group-two">
+              <input type="date" id="dateOfBirth" title="Date of Birth">
+            </div>
+            <div class="form-group-two">
+              <input type="tel" id="textAlerts" title="Sign Up for our Newsletter" placeholder="#tel (123-456-7890)">
+            </div>
+            <button type="submit" class="btn btn-default" id="newSubmitBtn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
